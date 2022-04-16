@@ -2,7 +2,7 @@
 #define MATRIX_H
 
 
-#define TEMPLATE_X  template<typename T>
+#define TEMPLATE_TYPE  template<typename T>
 
 
 enum MATRIX_TYPE {
@@ -12,7 +12,7 @@ enum MATRIX_TYPE {
 };
 
 
-TEMPLATE_X
+TEMPLATE_TYPE
 class CMatrix{
 
 private:

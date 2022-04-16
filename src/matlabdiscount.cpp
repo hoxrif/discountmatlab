@@ -11,14 +11,14 @@ void say_hello(){
 
 
 
-TEMPLATE_X CMatrix<T>::CMatrix():
+TEMPLATE_TYPE CMatrix<T>::CMatrix():
     __matrix(nullptr),
     __sizeM(0),
     __sizeN(0) {
     // class initialize 
 }
 
-TEMPLATE_X CMatrix<T>::~CMatrix(){
+TEMPLATE_TYPE CMatrix<T>::~CMatrix(){
     if (__matrix != nullptr){
         for (int i = 0;i<__sizeM;i++)
             delete [] __matrix[i];
@@ -26,7 +26,7 @@ TEMPLATE_X CMatrix<T>::~CMatrix(){
         delete []__matrix;
     }
 }
-TEMPLATE_X CMatrix<T>::CMatrix(int M,int N): 
+TEMPLATE_TYPE CMatrix<T>::CMatrix(int M,int N): 
     __matrix(nullptr),
     __sizeM(0),
     __sizeN(0) {
@@ -38,7 +38,7 @@ TEMPLATE_X CMatrix<T>::CMatrix(int M,int N):
     __sizeM = M;
     __sizeN = N;
 }
-TEMPLATE_X CMatrix<T>::CMatrix(int M,int N,MATRIX_TYPE mType):
+TEMPLATE_TYPE CMatrix<T>::CMatrix(int M,int N,MATRIX_TYPE mType):
     __matrix(nullptr),
     __sizeM(0),
     __sizeN(0)
@@ -62,7 +62,7 @@ TEMPLATE_X CMatrix<T>::CMatrix(int M,int N,MATRIX_TYPE mType):
     __sizeM = M;
     __sizeN = N;
 }
-TEMPLATE_X 
+TEMPLATE_TYPE 
 void CMatrix<T>::createMatrix(int M,int N){
     __matrix = new T*[M];
     for (int i=0;i<M;i++)
