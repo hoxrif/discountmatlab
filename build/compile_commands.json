@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/hoxrif/Documents/discountmatlab/build",
+  "command": "/usr/bin/g++    -g   -o CMakeFiles/matlabdiscount.dir/src/matlabdiscount.cpp.o -c /home/hoxrif/Documents/discountmatlab/src/matlabdiscount.cpp",
+  "file": "/home/hoxrif/Documents/discountmatlab/src/matlabdiscount.cpp"
+}
+]

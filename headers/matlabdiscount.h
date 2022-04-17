@@ -26,7 +26,22 @@ public:
     ~CMatrix();
     CMatrix(int m,int n);   // MxN zero matrix
     CMatrix(int m,int n,MATRIX_TYPE mType); // exam. -> 'e' MxN eye matrix 
-
+    CMatrix(int m,int n,T one_d_array[]);
+    //CMatrix operator+(const CMatrix & mtrx);
 };
 
+
+template class CMatrix<char>;
+template class CMatrix<unsigned char>;
+template class CMatrix<short>;
+template class CMatrix<unsigned short>;
+template class CMatrix<int>;
+template class CMatrix<unsigned int>;
+
+template class CMatrix<float>;
+
+template class CMatrix<long>;
+template class CMatrix<unsigned long>;
+
+template class CMatrix<double>;
 #endif

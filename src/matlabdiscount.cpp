@@ -1,13 +1,4 @@
-#include "../headers/matrix.h"
-
-
-
-/*
-void say_hello(){
-    std::cout << "Hello, from matlabdiscount!\n";
-}
-*/
-
+#include "../headers/matlabdiscount.h"
 
 
 
@@ -62,9 +53,24 @@ TEMPLATE_TYPE CMatrix<T>::CMatrix(int M,int N,MATRIX_TYPE mType):
     __sizeM = M;
     __sizeN = N;
 }
+TEMPLATE_TYPE CMatrix<T>::CMatrix(int M,int N,T arr[]):__matrix(nullptr),
+    __sizeM(0),
+    __sizeN(0)
+{
+    if (arr == nullptr)
+        return;
+
+    createMatrix(M,N);
+    for (int i = 0;i<M;i++)
+        for(int j = 0;j<N;j++)
+            __matrix[i][j] = arr[i*M + j];
+    __sizeM = M;
+    __sizeN = N;
+}
+
 TEMPLATE_TYPE 
 void CMatrix<T>::createMatrix(int M,int N){
     __matrix = new T*[M];
     for (int i=0;i<M;i++)
-        __matrix = new T[N];
+        __matrix[i] = new T[N];
 }
