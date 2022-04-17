@@ -37,11 +37,8 @@ template class CMatrix<short>;
 template class CMatrix<unsigned short>;
 template class CMatrix<int>;
 template class CMatrix<unsigned int>;
-
 template class CMatrix<float>;
-
 template class CMatrix<long>;
 template class CMatrix<unsigned long>;
-
 template class CMatrix<double>;
 #endif
