@@ -1,2 +1,0 @@
-/usr/bin/ar qc libmatlabdiscount.a  CMakeFiles/matlabdiscount.dir/src/matlabdiscount.cpp.o
-/usr/bin/ranlib libmatlabdiscount.a
